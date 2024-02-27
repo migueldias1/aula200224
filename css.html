@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_dia_200224t</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link class="kode-mono-400" rel="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body class="kode-mono-400">
+    
+ <header id="header">
+    <img class="logo" src="https://th.bing.com/th/id/OIG4.K.C4WHaSGlcLVd5yzcQ8?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Logo da EducaFREE" height="120vh" width="120vh">
+    <a id="icone" href="#header">↑</a> 
+    <h1>
+        EducareFree
+    </h1>
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="cuhtml.html">HTML</a>
+        <a href="">JavaScript</a>
+        <a href="">Python</a>
+        <a href="">Game-DEV</a>
+    </nav>
+    </header>
+
+
+<main> <div id="css">
+<h1>Curso de CSS - Do Básico ao Avançado</h1>
+<h2>O que é CSS?</h2>
+<p>CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para controlar a apresentação e o layout de documentos HTML. Ele define como os elementos HTML devem ser exibidos na página, incluindo cores, fontes, espaçamento, posicionamento e muito mais.</p>
+
+<h2>Seletores</h2>
+<p>Seletores CSS são padrões usados para selecionar os elementos HTML aos quais você deseja aplicar estilos. Existem diversos tipos de seletores, incluindo seletores de tipo, de classe, de ID, combinadores, pseudo-classes e pseudo-elementos.</p>
+<ul>
+    <li>Seletor de tipo: >p { color: blue; }</li>
+    <li>Seletor de classe: .destaque { font-weight: bold; }</li>
+    <li>Seletor de ID: #paragrafo { font-style: italic; }</li>
+    <li>Combinador de descendência: div p { text-decoration: underline; }</li>
+    <li>Pseudo-classe: a:hover { color: red; }</li>
+    <li>Pseudo-elemento: p::first-letter { font-size: 150%; }</li>
+</ul>
+
+<h2>Propriedades e Valores</h2>
+<p>As propriedades CSS especificam as características que você deseja alterar, como cor, tamanho, margem, etc. Cada propriedade possui um valor associado que define como essa característica deve ser exibida.</p>
+<ul>
+    <li>Cor do texto: h1 { color: #FF0000; }</li>
+    <li>Tamanho da fonte: h2 { font-size: 24px; }</li>
+    <li>Margem superior: p { margin-top: 20px; }</li>
+    <li>Alinhamento de texto: div { text-align: center; }</li>
+</ul>
+
+<h2>Box Model</h2>
+<p>O modelo de caixa (box model) é um conceito fundamental do CSS que descreve como os elementos HTML são renderizados no navegador. Ele consiste em quatro áreas: conteúdo, preenchimento, borda e margem. Entender o box model é essencial para criar layouts precisos e responsivos.</p>
+<pre>
+    div {
+width: 200px;
+height: 100px;
+padding: 20px;
+border: 2px solid #000;
+margin: 10px;
+}
+</pre>
+
+<h2>Layouts</h2>
+<p>CSS oferece várias técnicas para criar layouts complexos e responsivos. Isso inclui o uso de propriedades de posicionamento, como position, float, display, flexbox e grid, que permitem posicionar e organizar elementos na página de maneira eficiente.</p>
+<pre>
+    .container {
+display: flex;
+justify-content: space-around;
+}
+
+.item {
+width: 100px;
+height: 100px;
+background-color: #333;
+color: #fff;
+text-align: center;
+line-height: 100px;
+}
+</pre>
+
+<h2>Estilização Avançada</h2>
+<p>Além das propriedades básicas de estilo, CSS oferece recursos avançados para estilização, como gradientes, sombras, transições, animações e transformações. Esses recursos permitem adicionar efeitos visuais sofisticados às páginas da web.</p>
+<pre>
+    div {
+background: linear-gradient(to right, #ff0000, #0000ff);
+}
+
+div {
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+transition: background-color 0.3s ease;
+}
+button:hover {
+background-color: #ff0000;
+}
+
+@keyframes example {
+from {transform: scale(1);}
+to {transform: scale(1.2);}
+}
+div {
+animation: example 2s infinite alternate;
+}
+</pre>
+
+<h2>Media Queries</h2>
+<p>Media queries são usadas para aplicar estilos com base nas características do dispositivo, como largura da tela, altura da tela, orientação, resolução, etc. Isso permite criar layouts responsivos que se adaptam a diferentes dispositivos e tamanhos de tela.</p>
+<pre>
+    @media screen and (max-width: 600px) {
+div {
+    font-size: 14px;
+}
+}
+</pre>
+
+<h2>Pré-processadores CSS</h2>
+<p>Pré-processadores CSS, como Sass, Less e Stylus, são ferramentas que estendem a sintaxe padrão do CSS, fornecendo recursos avançados, como variáveis, mixins, aninhamento, herança, entre outros. Essas ferramentas ajudam a tornar o código CSS mais modular, reutilizável e fácil de manter.</p>
+<pre>
+    $cor-primaria: #ff0000;
+
+body {
+background-color: $cor-primaria;
+}
+</pre>
+
+<h2>Frameworks CSS</h2>
+<p>Frameworks CSS, como Bootstrap, Foundation e Bulma, são conjuntos de estilos pré-definidos e componentes que podem ser utilizados para acelerar o desenvolvimento web. Eles fornecem grids, tipografia, formulários, botões e outros componentes comuns, facilitando a criação de interfaces consistentes e atraentes.</p>
+<p>Exemplo de uso do Bootstrap:</p>
+<pre>
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"&gt;
+&lt;title&gt;Exemplo Bootstrap&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="container"&gt;
+&lt;h1&gt;Meu Site&lt;/h1&gt;
+&lt;p&gt;Este é um exemplo de layout usando Bootstrap.&lt;/p&gt;
+&lt;button class="btn btn-primary"&gt;Botão&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>Este curso abrange desde os conceitos básicos até as técnicas mais avançadas em CSS, preparando os alunos para criar páginas web profissionais e visualmente impressionantes.</p>
+</div>
+</main>
+</body>
