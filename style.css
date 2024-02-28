@@ -51,7 +51,7 @@ nav>a:hover{
 }
 
 section {
-    height: 120vh;
+    height: 130vh;
     
 }
 
@@ -71,12 +71,21 @@ section {
 }
 #js {
     background-color: #FFF8F0;
+    border: solid black;
+    border-width: 1vh;
+    padding: 10vh;
 }
 #python {
     background-color: #FFCF99;
+    border: solid black;
+    border-width: 1vh;
+    padding: 10vh;
 }
 #game-dev {
     background-color: #111D4A;
+    border: solid black;
+    border-width: 1vh;
+    padding: 10vh;
 }
 #icone {
     position:fixed;
